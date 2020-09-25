@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*-------------HEADER-------------*/
+header{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+  
+}
+
+header h1{
+    color: #fff;
+    font-size: 4rem;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.2rem;
+    opacity: 0;
+    animation: movetxt 1s forwards;
+   
+}
+
+header p{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    padding: 1.4rem 0;
+    letter-spacing: 0.2rem;
+    animation: movetxt 1s forwards;
+    
+}
+
+@media (max-width: 665px){
+    header h1{
+        font-size: 2.4rem;
+    }
+
+}
+
+@media(max-width: 421px){
+    header h1{
+        text-align: center;
+    }
+
+}
+header button{
+    color: #fff;
+    background: #8E2DE2;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    padding: 1.2rem 3rem;
+    border: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: movetxt 1s forwards;
+   
+}
+
+
+@keyframes movetxt{
+    0%{
+        transform: translateY(10rem);
+    }100%{
+        transform: translateY(0);
+        opacity: 1;
+       
+
+    }
+}
+
+/*-------------SOBRE-------------*/
+
+.about{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.about-content{
+    display: flex;
+}
+
+.about-content img{
+    width: 220px;
+    height: 220px;   
+    border-radius: 6px;
+    margin-right: 20px;
+}
+@media (max-width: 822px){
+    .about-content img{
+        margin-left: 10px;
+    }
+
+}
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #6C63FF;
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.about-text{
+    padding: 10px 0px 0px 20px ;
+
+}
+
+.about-text h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #6C63FF;
+
+}
+
+.about-text p{
+    font-size: 1.1em;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+   
+}
+
+/*-------------Skill-------------*/
+
+.skills{
+    width: 100%;
+    height: 100vh;
+    
+}
+
+
+
+.skill-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cards img{
+    width: 120px;
+    height: 100px;
+}
