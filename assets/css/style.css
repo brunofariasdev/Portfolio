@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: #121214;
+}
+
+
 html{
     scroll-behavior: smooth;
 }
@@ -28,6 +33,7 @@ header h1{
     letter-spacing: 0.2rem;
     opacity: 0;
     animation: movetxt 1s forwards;
+    text-align: center;
    
 }
 
@@ -41,9 +47,11 @@ header p{
     
 }
 
-@media (max-width: 665px){
+@media (max-width: 663px){
     header h1{
         font-size: 2.4rem;
+        text-align: center;
+       
     }
 
 }
@@ -142,7 +150,7 @@ header button{
 
 .skills{
     width: 100%;
-    height: 100vh;
+    height: 300px;
     
 }
 
@@ -157,4 +165,99 @@ header button{
 .cards img{
     width: 120px;
     height: 100px;
+}
+
+/*--------------Contact----------------*/
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.contact h2{
+    color: #6C63FF;
+    font-family: 'Playfair Display', serif;
+    
+}
+.social{
+    display: flex;
+    justify-content: center;
+}
+.social a i{
+    font-size: 3.2rem;
+    padding: 10px;
+    color: #6C63FF;
+    
+}
+
+.social a i:hover{
+    color: #5f56fd;
+}
+
+#insta{
+    color: #E1306C;
+}
+
+#git{
+    color: black;
+}
+#link{
+    color:#2867B2; 
+}
+#tw{
+    color:  #1DA1F2;
+}
+
+/*---------------PORTFOLIO------------*/
+
+.portfolio h4{
+    text-align: center;
+    color: #6C63FF;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    
+    
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.card{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    height: 365px;
+    margin: 10px;
+    background: -webkit-linear-gradient(to right, #4b00e080, #4f27726b);
+    background: linear-gradient(to right, #4b00e08e, #8d2de27c);
+    border-radius: 10px;
+}
+
+.card img{
+    padding: 15px;
+    height: 300px;
+    width: 400px;
+    cursor: pointer;
+    border-radius: 19px;
+}
+.card img:hover{
+    height: 302px;
+    width: 402px;
+}
+
+.card h3{
+    color: #fff;
+}
+
+.card a i{
+    color: #fff;
+    font-size: 40px;
+}
+
+.card a i:hover{
+    opacity: 0.6;
+
 }
